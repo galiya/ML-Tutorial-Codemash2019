@@ -1,4 +1,4 @@
-#Lab2: Supervised Learning
+# Lab 2: Supervised Learning
 
 In this lab we will explore the 1994 U.S. Census dataset, that provides various information about individuals, incluing their annual income. Our task here will be to predict if individual makes more than $50K using supervised learning techniques. 
 
