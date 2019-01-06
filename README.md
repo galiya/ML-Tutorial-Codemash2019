@@ -98,7 +98,7 @@ If you are performing this setup a day before the tutorial, you can optionally S
 
 #### Option 2. Use your laptop 
 
-> **NOTE:** Depending on your laptop specs, you may have some issues following all steps in Part 4 Deep Learning module.
+> **NOTE:** Depending on your laptop specs, you may have some issues following all steps in Part 4 Deep Learning module. However, for the purposes of the tutorial, we do not require access to GPU.
 
 1. Install Anaconda environment using the [official Downloads page](https://www.anaconda.com/download/).
 
@@ -108,3 +108,5 @@ If you are performing this setup a day before the tutorial, you can optionally S
 
 4. For tutorials we expect you to use either an editor, such as [PyCharm](https://www.jetbrains.com/pycharm/download/
 ) or Jupyter Notebook environment (as described in step 3)
+
+5. If you prefer to run Deep Learning lab (Lab 4) on your local machine, please find and follow a tutorial that describes setting up Keras on a local environment (one such example is [here](https://towardsdatascience.com/setup-an-environment-for-machine-learning-and-deep-learning-with-anaconda-in-windows-5d7134a3db10))
