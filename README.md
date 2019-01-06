@@ -2,13 +2,16 @@
 
 ## Pre-requisites
 
-To maximize your tutorial time, please use the following steps to setup your environment on the cloud or on your local machine before arriving on the day.
+To maximize your tutorial time, please use the following steps to setup your environment on the cloud (preferrably) or on your local machine before arriving on the day.
 
 ### Setting up your working environment
 
-For the tutorial we would require access to [Anaconda](https://www.anaconda.com) environment with Python 3.7.
+For the Lab 1-3 we would require access to [Anaconda](https://www.anaconda.com) environment with Python 3.7.  As well as access to the editor, such as PyCharm (Download [Community Edition](https://www.jetbrains.com/pycharm/download/) from JetBrains website)
+
 
 > **NOTE:** That environment comes by default via an Azure Data Science Virtual Machine (a cloud virtual machine with a prepared data science environment) as described below in the Option 1, or you can install it on your local laptop as described in the Option 2. Please prepare your own environment if you are using any other cloud provider.
+
+> **NOTE:** For Lab 4 (Deep Learning) it's advised to setup a cloud environemnt (Azure, AWS, GCP) with Keras framework installed. 
 
 #### Option 1. Microsoft Azure subscription
 
@@ -103,4 +106,5 @@ If you are performing this setup a day before the tutorial, you can optionally S
 
 3. Once installation is successful, try running your first Python as described [here](http://docs.anaconda.com/anaconda/user-guide/getting-started/)
 
-4. For tutorials we expect you to use either an editor or Jupyter Notebook environment (as described in step 3)
+4. For tutorials we expect you to use either an editor, such as [PyCharm](https://www.jetbrains.com/pycharm/download/
+) or Jupyter Notebook environment (as described in step 3)
