@@ -11,7 +11,7 @@ For the Lab 1-3 we would require access to [Anaconda](https://www.anaconda.com) 
 
 > **NOTE:** That environment comes by default via an Azure Data Science Virtual Machine (a cloud virtual machine with a prepared data science environment) as described below in the Option 1, or you can install it on your local laptop as described in the Option 2. Please prepare your own environment if you are using any other cloud provider.
 
-> **NOTE:** For Lab 4 (Deep Learning) it's advised to setup a cloud environemnt (Azure, [AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html), [GCP](https://medium.com/google-cloud/containerized-jupyter-notebooks-on-gpu-on-google-cloud-8e86ef7f31e9)) with Keras framework installed. 
+> **NOTE:** For Lab 4 (Deep Learning) it's advised to setup a cloud environemnt (Azure, [AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html), [GCP](https://medium.com/google-cloud/containerized-jupyter-notebooks-on-gpu-on-google-cloud-8e86ef7f31e9)) with Keras framework installed. For the purposes of the tutorial, we do not require access to GPU.
 
 #### Option 1. Microsoft Azure subscription
 
