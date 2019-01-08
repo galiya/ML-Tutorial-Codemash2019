@@ -109,4 +109,21 @@ If you are performing this setup a day before the tutorial, you can optionally S
 4. For tutorials we expect you to use either an editor, such as [PyCharm](https://www.jetbrains.com/pycharm/download/
 ) or Jupyter Notebook environment (as described in step 3)
 
-5. If you prefer to run Deep Learning lab (Lab 4) on your local machine, please find and follow a tutorial that describes setting up Keras on a local environment (one such example is [here](https://towardsdatascience.com/setup-an-environment-for-machine-learning-and-deep-learning-with-anaconda-in-windows-5d7134a3db10))
+5. Create a new virtual environment "codemash":
+* Open the anaconda prompt
+* conda create --name codemash python=3.7
+
+6. Activate your conda virtual environment:
+* (WINDOWS): activate codemash
+* (LINUX, macOS): source activate codemash
+
+7. Install scikit-learn / pandas / matplotlib packages in the codemash conda environment:
+* conda install scikit-learn
+* conda install pandas 
+* conda install matplotlib
+
+8. Run PyCharm editor from conda environmnt:
+* cd to PyCharm directory
+* run pycharm64.exe file to start PyCharm editor with all the correct environment variables 
+
+9. [For Lab 4, Deep learning] If you prefer to run Deep Learning lab on your local machine, please find and follow a tutorial that describes setting up Keras on a local environment (one such example is [here](https://towardsdatascience.com/setup-an-environment-for-machine-learning-and-deep-learning-with-anaconda-in-windows-5d7134a3db10))

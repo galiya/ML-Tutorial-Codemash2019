@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 
 # 2. Load the US Census 1994 dataset
-data = pd.read_csv("us-census-dataset.csv")
+data = pd.read_csv("Lab2\\us-census-dataset.csv")
+
 
 # 3. Display first 5 records
 data.head(n=5) 
