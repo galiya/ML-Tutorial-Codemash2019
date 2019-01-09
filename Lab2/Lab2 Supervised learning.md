@@ -1,15 +1,15 @@
 # Lab 2: Supervised Learning
 
-In this lab we will explore the 1994 U.S. Census dataset, that provides various information about individuals, incluing their annual income. Our task here will be to predict if individual makes more than $50K using supervised learning techniques. 
+In this lab we will explore the 1994 U.S. Census dataset, that provides various information about individuals, including their annual income. Our task here will be to predict if an individual makes more than $50K using supervised learning techniques. 
 
-This kind of request can happen within an NGO, where during a marketing campaign the prospective donors need to be identified and reached out to make a donation. While it can be difficult to determine an individual's income range directly from public sources, we can infer some results from other publically available features.
+This kind of request can happen within an NGO, where during a marketing campaign the prospective donors need to be identified and contacted to make a donation. While it can be difficult to determine an individual's income range directly from public sources, we can infer some results from other publically available features.
 
 ## Part 1: Data Exploration
 
 Let’s explore the dataset:
 
 1. Import numpy and pandas libraries
-2. Use **pandas.read_csv** method to load **us-census-dataset.csv** file into a Pandas Dataframe 
+2. Use `pandas.read_csv` method to load `us-census-dataset.csv` file into a Pandas Dataframe 
 3. Print the first 5 rows of the dataframe
 4. Calculate the number of records within the dataset
 5. Determine how many people are within each "<=50K" or ">50K" groups (based on "income" column values)
@@ -32,7 +32,6 @@ Let’s explore the dataset:
 
 ## Prepare Data
 
-
 7. Split data into features (**features_raw**) and target label (**income_raw**)
 
 ### Missing values
@@ -43,14 +42,15 @@ However, this is usually not the case in the real world.
 
 8. Explore numerical features using **describe** method, and investigate the differences between 'age' and 'capital-gain' columns, for instance
 
-As you may see after the step above we have features where values tend to be near a single number, but also some features where values can be extremely small or extremely large. Algorithms can be sensitive to such differences, and we should perform some additional steps to transform and normalise the range of value for each features ('capital-loss' / 'capital-gain' in our case) 
+As you may see after the step above we have features where values tend to be near a single number, but also some features where values can be extremely small or extremely large. Algorithms can be sensitive to such differences, and we should perform some additional steps to transform and normalise the range of values for each features ('capital-loss' / 'capital-gain' in our case)
+
 A common practice is to use logarithmic transformation to such ranges, where we keep the scale of values significantly, while keeping the feature distribution shape. 
 
 9. Apply logarithmic transformation to 2 identified columns (Note: Remember that log(0) is **undefined**)
 
-Additionally, it's a common practice to scale numerical data (while keeping the shape of each feature's distribuion as it was). It ensures that each feature is treated equally when a supervised learner algorithm is applied. We'd often scale (normalise) numerical vales to a range [0, 1]. 
+Additionally, it's a common practice to scale numerical data (while keeping the shape of each feature's distribuion as it was). It ensures that each feature is treated equally when a supervised learning algorithm is applied. We'd often scale (normalise) numerical vales to a range [0, 1]. 
 
-**sklearn** library allows to do this by using **sklearn.preprocessing.MinMaxScaler**.
+**sklearn** library allows us to do this by using `sklearn.preprocessing.MinMaxScaler`.
 
 10. Import MinMaxScaler from sklearn.preprocessing
 11. Scale numerical features of the previously log-transformed dataset using [MinMaxScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
@@ -58,14 +58,15 @@ Additionally, it's a common practice to scale numerical data (while keeping the 
 
 ### Categorical values
 
-As you have noticed already we also have non-numerical columns, i.e. education_level and others. Machine Learning algorithms expect to deal with numeric inputs, hence we need to use additional transformation for such columns that can convert them into numerical features. 
+As you have noticed already we also have non-numerical columns, i.e. **education_level** and others. Machine Learning algorithms expect to deal with numeric inputs, hence we need to use additional transformation for such columns that can convert them into numerical features. 
 
-One-hot encoding scheme is one of popular methods to achieve that. 
-If for example, our census dataset had a feature **pet** with 3 answers (dog, cat, none), after using this transformation it will be replaced by 3 features: **pet_dog**, **pet_cat**, **pet_none**, with 0 and 1 in place to identify the selection.
+One-hot encoding scheme is one of the popular methods to achieve that.
+
+If, for example, our census dataset had a feature **pet** with 3 answers (dog, cat, none), after using this transformation it will be replaced by 3 features: **pet_dog**, **pet_cat**, **pet_none**, with 0 and 1 in place to identify the selection.
 
 12. Use **pandas.get_dummies** method to perform one-hot encoding on the previously transformed dataset
 
-13. Transform target label **income** that represented as a categorical variable with 2 responses ["<=50K, >50K"] into respective categories [0, 1].
+13. Transform target label **income** that is represented as a categorical variable with 2 responses ["<=50K, >50K"] into respective categories [0, 1].
 
 
 ## Part 2: Build supervised machine learning models
@@ -95,9 +96,6 @@ An important task when performing supervised learning on a dataset like ours is 
 
 1. When you looked at the initial census dataset, with 13 columns, which top 5 would you select that could predict whether a person is earning over or below $50K?
 
-Many of the supervised algorithms in scikit-learn library have **_feature_importance** attribute available to access ranks given to each of the features for a given predictive model 
+Many of the supervised algorithms in scikit-learn library have the **_feature_importance** attribute available to access ranks given to each of the features for a given predictive model 
 
 2. Print the features' importance values based on your model and compare results with your intuitive answer above
-
-
-
