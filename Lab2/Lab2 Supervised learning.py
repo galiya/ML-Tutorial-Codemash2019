@@ -94,6 +94,13 @@ from sklearn.metrics import accuracy_score
 model_accuracy = accuracy_score(y_test, predictions_test)
 print(model_accuracy)
 
+#7. Visualise the decision tree
+from sklearn.tree import export_graphviz
+export_graphviz(model, out_file='Lab2\\tree.dot', feature_names = list(features_final),
+                rounded = True, proportion = False, precision = 2, filled = True, max_depth = 5)
+# To generate an image file using .dot file, use GraphViz software: https://www.graphviz.org
+
+
 ## Part 3. Feature importances
 
 # 2. Extract feature_importances_ values

@@ -88,6 +88,7 @@ For the purpose of the lab we are going to use Decision tree model, and use it w
 4. Initalise and train the model using X_train, y_train data
 5. Score the model using the X_test features
 6. Evaluate model predictions using accuracy metric from sklearn.metric against y_test data
+7. [Optional] Visualise Decision Tree graph
 
 ## Part 3: Feature importance [Optional]
 An important task when performing supervised learning on a dataset like ours is to define which features provide the most predictive power. 
