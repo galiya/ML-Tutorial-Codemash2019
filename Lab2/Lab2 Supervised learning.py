@@ -100,6 +100,11 @@ export_graphviz(model, out_file='Lab2\\tree.dot', feature_names = list(features_
                 rounded = True, proportion = False, precision = 2, filled = True, max_depth = 5)
 # To generate an image file using .dot file, use GraphViz software: https://www.graphviz.org
 
+# Code to visualize using graphviz library
+import graphviz
+
+with open("tree.dot") as f:
+    dot_graph = f.read()
 
 ## Part 3. Feature importances
 
