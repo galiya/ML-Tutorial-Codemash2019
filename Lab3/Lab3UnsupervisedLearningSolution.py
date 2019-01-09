@@ -1,4 +1,6 @@
 # Solution to Lab 3.a
+# Uncomment below line for inline matplotlib display in Jupyter notebook
+# %matplotlib inline
 
 # Load the Iris data
 from sklearn.datasets import load_iris
