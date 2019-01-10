@@ -17,7 +17,7 @@ Let’s explore the dataset:
 9. Print the summary statistics from the Pandas Dataframe
 10. Plot the PRICE feature
 
-## Linear regresion model
+## Linear regression model
 
 Let’s predict the house price as a function of the other available features:
 
